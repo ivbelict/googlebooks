@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    font-family: 'Lato', sans-serif;
+}
+
+.profile{
+    display: flex;
+    justify-content: space-between;
+    align-items: first;
+}
+
+.profile__img{
+    width: 45%;
+    height: 70vh;
+    background-color: #dad9d9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: #282c34;
+    margin-right: 30px;
+}
+
+.profile__img img{
+    width: 350px;
+    height: 400px;
+}
+
+@media screen and (max-width: 700px){
+    .profile__img img{
+        width: 200px;
+        height: 350px;
+    }
+}
+@media screen and (max-width: 550px){
+    .profile__img{
+        background: none;
+    }
+    .profile__img img{
+        width: 100px;
+        height: 200px;
+    }
+}
+
+.profile__info{
+    padding: 15px;
+    width: 50%;
+    margin-right: 30px;
+    margin-top: 50px;
+}
+
+.profile__categories{
+    font-size: 16px;
+    color: gray;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.profile__title{
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.profile__authors{
+    font-size: 18px;
+    color: gray;
+    opacity: .8;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+.profile__description{
+    border: 1px solid gray;
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Nunito Sans', sans-serif;
+}
